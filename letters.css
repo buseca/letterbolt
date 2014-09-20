@@ -1,0 +1,32 @@
+body {
+	background-color: #eeeeee;
+	padding: 400px 0 ;
+}
+
+.letterbolt {
+  display: inline-block;
+}
+
+.fill {
+  opacity: 0;
+  transition: opacity 0.4s;
+  -webkit-transition: opacity 0.4s;
+}
+
+.path{
+  transition: opacity 0.2s;
+  -webkit-transition: opacity 0.2s;
+}
+
+
+
+
+
+
+
+.circle {
+	padding: 20px;
+	border-radius: 100%;
+	background-color: #dddddd;
+	display: inline-block;
+}
