@@ -14,7 +14,7 @@
 		$data = fread($handle, 512) ;
 		$count = $data + 1;
 		$count_padded = sprintf("%06s", $count);
-		echo "<h1 class='lb giant scrolled' id='counter' >".$count_padded."</h1>" ;
+		print "<h1 class='lb giant scrolled' id='counter' > " .$count_padded."</h1>" ;
 		fseek($handle, 0) ;
 		fwrite($handle, $count) ;
 		fclose($handle) ;
