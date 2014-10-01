@@ -1,4 +1,4 @@
 letterbolt
 ==========
 
-demo page: http://buseca.github.io/letterbolt/
+demo page: http://ruggeromotta.com/letterbolt
