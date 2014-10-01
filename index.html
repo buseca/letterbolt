@@ -14,7 +14,7 @@
 		$data = fread($handle, 512) ;  //Actully get the count from the file   
 		$count = $data + 1;  //Add the new visitor to the count   
 		$count_padded = sprintf("%06s", $count);
-		print "<h1 class='lb giant scrolled' id='counter'>" . $count_padded . "</h1>";  //Prints the count on the page   
+		print "<h1 class='lb giant scrolled' id='counter' >" . $count_padded . "</h1>";  //Prints the count on the page   
 		fseek($handle, 0) ;  //Puts the pointer back to the begining of the file   
 		fwrite($handle, $count) ;  //saves the new count to the file   
 		fclose($handle) ;  //closes the file  
