@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<script src="jquery-2.1.1.min.js"></script>
+	<script src="letters.js"></script>
+	<script src="lb-demo.js"></script>
+	<link rel="stylesheet" type="text/css" href="letters.css">
+</head>
+<body>
+		<h1 class='lb giant scrolled' id='counter'>000023</h1>
+		<!-- 
+		<?php  $File = "counter.txt";  //This is the text file we keep our count in, that we just made 
+		$handle = fopen($File, 'r+') ;  //Here we set the file, and the permissions to read plus write   
+		$data = fread($handle, 512) ;  //Actully get the count from the file   
+		$count = $data + 1;  //Add the new visitor to the count   
+		$count_padded = sprintf("%06s", $count);
+		print "<h1 class='lb giant scrolled' id='counter'>".$count_padded."</h1>";  //Prints the count on the page   
+		fseek($handle, 0) ;  //Puts the pointer back to the begining of the file   
+		fwrite($handle, $count) ;  //saves the new count to the file   
+		fclose($handle) ;  //closes the file  
+
+		?> -->
+	<h4 class="lb small looped" id="counter-label">people who clicked this small red button</h4>
+	<button class="red-button" onClick="window.location.reload()">a button</button>
+	<div class="alfabeto">
+		<div class="alphabet lb scrolled big">q w e r</div>
+		<div class="alphabet lb scrolled big">t y u i</div>
+		<div class="alphabet lb scrolled big">o p a s</div>
+		<div class="alphabet lb scrolled big">d f g h</div>
+		<div class="alphabet lb scrolled big">j k l z</div>
+		<div class="alphabet lb scrolled big">x c v b</div>
+		<div class="alphabet lb scrolled big">n m , :</div>
+		<div class="alphabet lb scrolled big">! . " ?</div>
+		<div class="alphabet lb scrolled big">' + - =</div>
+		<div class="alphabet lb scrolled big">*</div>
+	</div>
+	
+	<p class="">
+		<div class="quote lb looped small">this is letterbolt, my animated js font.</div>
+		<br>
+		<div class="quote lb looped small">if interested, follow me to stay updated.</div>
+		<a class="twitter" href="https://twitter.com/ruggeromotta">@ruggeromotta</a>
+	</p>
+
+
+</body>
+
+</html>
