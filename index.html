@@ -1,0 +1,180 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<script src="jquery-2.1.1.min.js"></script>
+	<script src="letters.js"></script>
+	<script src="lb-demo.js"></script>
+	<link rel="stylesheet" type="text/css" href="letters.css">
+</head>
+<body>
+
+
+
+	<h1 class='lb giant scrolled' id='counter' style="height:280px;"></h1>
+	<h4 class="lb small looped" id="counter-label">people who clicked this small red button</h4>
+	<button class="red-button">a button</button>
+	<div class="alfabeto">
+		<div class="alphabet lb scrolled big">q w e r</div>
+		<div class="alphabet lb scrolled big">t y u i</div>
+		<div class="alphabet lb scrolled big">o p a s</div>
+		<div class="alphabet lb scrolled big">d f g h</div>
+		<div class="alphabet lb scrolled big">j k l z</div>
+		<div class="alphabet lb scrolled big">x c v b</div>
+		<div class="alphabet lb scrolled big">n m , :</div>
+		<div class="alphabet lb scrolled big">! . " ?</div>
+		<div class="alphabet lb scrolled big">' + - =</div>
+		<div class="alphabet lb scrolled big">*</div>
+	</div>
+	
+	<p class="">
+		<div class="quote lb looped small">this is letterbolt, my animated js font.</div>
+		<br>
+		<div class="quote lb looped small">if interested, follow me to stay updated.</div>
+		<a class="twitter" href="https://twitter.com/ruggeromotta">@ruggeromotta</a>
+	</p>
+	<script>
+
+	function pad(num, size){ return ('000000000' + num).substr(-size); }
+
+			function arrayMeNumber(string) {
+
+				var sizeFactor = 5;
+
+				var w8 = 8*sizeFactor;
+				var w9 = 9*sizeFactor;
+
+				var w11 = 11*sizeFactor;
+				var w14 = 14*sizeFactor;
+				var w17 = 17*sizeFactor;
+				var w18 = 18*sizeFactor;
+
+				var w20 = 20*sizeFactor;
+				var w28 = 28*sizeFactor;
+				var w29 = 29*sizeFactor;
+
+				var w30 = 30*sizeFactor;
+				var w31 = 31*sizeFactor;
+				var w32 = 32*sizeFactor;
+				var w33 = 33*sizeFactor;
+				var w34 = 34*sizeFactor;
+				var w35 = 35*sizeFactor;
+				var w36 = 36*sizeFactor;
+				var w37 = 37*sizeFactor;
+				var w38 = 38*sizeFactor;
+				var w39 = 39*sizeFactor;
+
+				var w40 = 40*sizeFactor;
+				var w42 = 42*sizeFactor;
+				var w43 = 43*sizeFactor;
+				var w44 = 44*sizeFactor;
+				var w53 = 53*sizeFactor;
+
+
+				var lb_1 = "<div class=\"letterbolt\"> <svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\" width=\"" + w20 + "\" preserveAspectRatio=\"xMinYMin meet\" viewBox=\"0 0 20 56\"  xml:space=\"preserve\"> <path class=\"path\" fill=\"none\" stroke=\"#000000\" stroke-width=\"8\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-miterlimit=\"10\" d=\"M5.718,23.75L13.906,18v31\"/> </svg> </div>";
+				var lb_2 = "<div class=\"letterbolt\"> <svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\" width=\"" + w32 + "\" preserveAspectRatio=\"xMinYMin meet\" viewBox=\"0 0 32 56\"  xml:space=\"preserve\"> <path class=\"path\" fill=\"none\" stroke=\"#000000\" stroke-width=\"8\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-miterlimit=\"10\" d=\"M6.25,28c0-15.335,18-11.666,20.083-5.832c2.319,6.496-3.046,10.08-11.833,15.165S6,49,6,49h21\"/> </svg> </div>";
+				var lb_3 = "<div class=\"letterbolt\"> <svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\" width=\"" + w32 + "\" preserveAspectRatio=\"xMinYMin meet\" viewBox=\"0 0 32 56\"  xml:space=\"preserve\"> <path class=\"path\" fill=\"none\" stroke=\"#000000\" stroke-width=\"8\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-miterlimit=\"10\" d=\"M6.632,21.961C7.875,17.37,12.152,17,16.75,17c14,0,10.75,14.581-0.5,14.581 M5.801,42.23C6.852,45.116,9.602,49,16.749,49 c13.188,0,13.563-17.419-0.5-17.419\"/> </svg> </div>";
+				var lb_4 = "<div class=\"letterbolt\"> <svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\" width=\"" + w38 + "\" preserveAspectRatio=\"xMinYMin meet\" viewBox=\"0 0 38 56\"  xml:space=\"preserve\"> <path class=\"path\" fill=\"none\" stroke=\"#000000\" stroke-width=\"8\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-miterlimit=\"10\" d=\"M24.688,17v32 M32.688,39H5.312l9.438-19.875\"/> </svg> </div>";
+				
+				var lb_5 = "<div class=\"letterbolt\"> <svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\" width=\"" + w34 + "\" preserveAspectRatio=\"xMinYMin meet\" viewBox=\"0 0 34 56\"  xml:space=\"preserve\"> <path class=\"path\" fill=\"none\" stroke=\"#000000\" stroke-width=\"8\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-miterlimit=\"10\" d=\"M26.834,17h-20v14c0,0,21.5-7.5,21.5,7c0,15.812-21.5,12.086-21.5,4.012\"/> </svg> </div>";
+				var lb_6 = "<div class=\"letterbolt\"> <svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\" width=\"" + w31 + "\" preserveAspectRatio=\"xMinYMin meet\" viewBox=\"0 0 31 56\" xml:space=\"preserve\"> <path class=\"path\" fill=\"none\" stroke=\"#000000\" stroke-width=\"8\" stroke-linecap=\"round\" stroke-miterlimit=\"10\" d=\"M6,36c0-1.293,0.388-7,10-7 c11.62,0,9.916,10.166,9.916,10.166S25.37,47,16,47C6.084,47,6,36,6,36V25.085C6,25.085,6.333,15,16.25,15 c4.96,0,7.522,2.521,8.844,5.045\"/> </svg> </div>";
+				var lb_7 = "<div class=\"letterbolt\"> <svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\" width=\"" + w32 + "\" preserveAspectRatio=\"xMinYMin meet\" viewBox=\"0 0 32 56\" xml:space=\"preserve\"> <path class=\"path\" fill=\"none\" stroke=\"#000000\" stroke-width=\"8\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-miterlimit=\"10\" d=\"M4.917,15h22L11.501,46.834\"/> </svg> </div>";
+				var lb_8 = "<div class=\"letterbolt\"> <svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\" width=\"" + w35 + "\" preserveAspectRatio=\"xMinYMin meet\" viewBox=\"0 0 35 56\"  xml:space=\"preserve\"> <path class=\"path\" fill=\"none\" stroke=\"#000000\" stroke-width=\"8\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-miterlimit=\"10\" d=\"M17.373,29c-5.038,0-9.121-2.801-9.121-6.583S12.335,15,17.373,15s9.121,3.635,9.121,7.417S22.41,29,17.373,29z M17.373,47 c-6.5,0-11.77-3.601-11.77-8.464S10.872,29,17.373,29s11.77,4.673,11.77,9.536S23.873,47,17.373,47z\"/> </svg> </div>";
+				var lb_9 = "<div class=\"letterbolt\"> <svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\" width=\"" + w30 + "\" preserveAspectRatio=\"xMinYMin meet\" viewBox=\"0 0 30 56\"  xml:space=\"preserve\"> <path class=\"path\" fill=\"none\" stroke=\"#000000\" stroke-width=\"8\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-miterlimit=\"10\" d=\"M14.688,32.195c-4.748,0-8.598-3.85-8.598-8.598S9.939,15,14.688,15c4.749,0,8.598,3.85,8.598,8.598S19.437,32.195,14.688,32.195z M23.25,24v15.25c0,0,0.62,7.828-8.88,7.828c-6.717,0-8.517-3.835-8.995-6.082\"/> </svg> </div>";
+				var lb_0 = "<div class=\"letterbolt\"> <svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\" width=\"" + w33 + "\" preserveAspectRatio=\"xMinYMin meet\" viewBox=\"0 0 33 56\"  xml:space=\"preserve\"> <path class=\"path\" fill=\"none\" stroke=\"#000000\" stroke-width=\"8\" stroke-linecap=\"round\" stroke-miterlimit=\"10\" d=\"M5.562,29.125 c0,0-0.306-12.125,11.035-12.125s10.84,12.125,10.84,12.125L27.44,37c0,0,0.306,12.125-11.035,12.125S5.565,37,5.565,37 L5.562,29.125z\"/> </svg> </div>";
+				
+
+
+
+				var myContents = "";
+				for (var i = 0, len = string.length; i < len; i++) {
+
+					if ( string[i] === '1' ) {
+						myContents += '' + lb_1 + '';
+					} else if ( string[i] === '2' ) {
+						myContents += '' + lb_2 + '';
+					} else if ( string[i] === '3' ) {
+						myContents += '' + lb_3 + '';
+					} else if ( string[i] === '4' ) {
+						myContents += '' + lb_4 + '';
+					} else if ( string[i] === '5' ) {
+						myContents += '' + lb_5 + '';
+					} else if ( string[i] === '6' ) {
+						myContents += '' + lb_6 + '';
+					} else if ( string[i] === '7' ) {
+						myContents += '' + lb_7 + '';
+					} else if ( string[i] === '8' ) {
+						myContents += '' + lb_8 + '';
+					} else if ( string[i] === '9' ) {
+						myContents += '' + lb_9 + '';
+					} else if ( string[i] === '0' ) {
+						myContents += '' + lb_0 + '';
+					}
+				};
+
+				return(myContents);
+			}
+
+
+
+
+			// funzione per animazione delle lettere al loading
+			var loadedAll=function(){
+				$("#counter").find(".letterbolt").each(function(){
+
+					//VARIABILI PER SELEZIONARE GLI OGGETTI
+					var path = this.querySelector('.path');
+					var fill = this.querySelector('.fill');
+
+					//VARIABILI RELATIVE AL PATH
+					var length = path.getTotalLength();
+					var offset = path.getTotalLength();
+					var color = $(this).find('.path').css('stroke');
+
+					//IMPOSTO LA SITUAZIONE INIZIALE
+					$(this).find('.path').css('stroke-dasharray', length);
+					$(this).find('.path').css('stroke-dashoffset', length);
+					$(this).find('.fill').css('fill',color);
+					
+					$(this).find('.path').animate({"stroke-dashoffset": '0'}, 1200);
+
+				});
+			}
+
+			
+
+
+
+			$(function () {
+
+				$.ajax({
+					url: 'http://www.ruggeromotta.com/letterbolt/counter.php',
+					type: 'get',
+					success: function (data) {
+						var number = pad(data, 6);
+						myContents = arrayMeNumber(number);
+						$('#counter').html(myContents);
+						loadedAll();
+					}
+				});
+				$('.red-button').on('click', function (e) {
+					e.preventDefault();
+					console.log('bottone');
+					$.ajax({
+						url: 'http://www.ruggeromotta.com/letterbolt/counter.php',
+						type: 'get',
+						success: function (data) {
+							var number = pad(data, 6);
+							myContents = arrayMeNumber(number);
+							$('#counter').html(myContents);
+							loadedAll();
+						}
+					});
+				});
+			});
+
+	</script>
+
+</body>
+</html>
