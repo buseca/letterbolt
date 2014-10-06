@@ -17,6 +17,8 @@ $(document).ready(function(){
 					var sizeFactor = 1/3;
 				} else if ( $(this).hasClass('big') ){
 					var sizeFactor = 3;
+				} else if ( $(this).hasClass('giant') ){
+					var sizeFactor = 5;
 				}
 				var w8 = 8*sizeFactor;
 				var w9 = 9*sizeFactor;
