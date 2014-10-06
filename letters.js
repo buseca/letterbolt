@@ -315,9 +315,9 @@ $(document).ready(function(){
 			var color = $(this).find('.path').css('stroke');
 
 			//VARIABILI PER IL CALCOLO DELLO SCROLLING
-			var altitude = $(window).height() / 100 * 82;
+			var altitude = $(window).height() / 100 * 70;
 			var positionNow = $(this).position().top;
-			var altitudeNow = $(window).scrollTop() + $(window).height() - positionNow -30 ;
+			var altitudeNow = $(window).scrollTop() + $(window).height() - positionNow -80 ;
 
 			//IMPOSTO LA SITUAZIONE INIZIALE
 			$(this).find('.path').css('stroke-dasharray', length);
@@ -325,7 +325,7 @@ $(document).ready(function(){
 			$(this).find('.fill').css('fill',color);
 
 			positionNow = $(this).position().top;
-			altitudeNow = $(window).scrollTop() + $(window).height() - positionNow -30 ;
+			altitudeNow = $(window).scrollTop() + $(window).height() - positionNow -80 ;
 			if( altitudeNow > 0 && altitudeNow <= altitude){
 				offset = length - (altitudeNow * length / altitude) ;
 				$(this).find('.path').css('stroke-dashoffset', offset );
