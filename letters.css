@@ -72,8 +72,12 @@ body {
   color: black;
 }
 
+.scroll-down {
+  padding-top: 140px;
+  text-align: center;
+}
 .alfabeto {
-  padding: 80px 0 40px 0;
+  padding: 10px 0 40px 0;
 }
 
 .alphabet {
