@@ -47,7 +47,7 @@ body {
   text-align: center;
 }
 
-.init-button {
+.red-button {
   background-color: orange;
   color: white;
   text-align: center;
@@ -64,12 +64,12 @@ body {
   display: block;
   outline: none;
 }
-.init-button:hover {
+.red-button:hover {
   box-shadow: 0px 0px 0px #fff;
   color: white;
   background-color: red;
 }
-.init-button:active {
+.red-button:active {
   box-shadow: 0px 0px 0px #fff;
   color: white;
   background-color: purple;
