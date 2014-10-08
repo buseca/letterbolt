@@ -107,7 +107,7 @@ body {
 
 #counter {
   background: url('demo/pattern.png');
-  background-size: 50px;
+  background-size: 100px;
   margin-top: 0;
   padding-bottom: 40px;
 }
