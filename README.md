@@ -1,6 +1,6 @@
 letterbolt
 ==========
 
-demo page: http://ruggeromotta.com/letterbolt
+demo page: http://buseca.github.io/letterbolt/
 
 follow me at @ruggeromotta
