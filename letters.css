@@ -65,12 +65,14 @@ body {
   outline: none;
 }
 .init-button:hover {
-  box-shadow: 0px 0px 0px red;
+  box-shadow: 0px 0px 0px #fff;
   color: white;
+  background-color: red;
 }
 .init-button:active {
-  box-shadow: 0px 0px 0px purple;
+  box-shadow: 0px 0px 0px #fff;
   color: white;
+  background-color: purple;
 }
 
 .scroll-down {
