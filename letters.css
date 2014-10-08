@@ -48,7 +48,7 @@ body {
 }
 
 .init-button {
-  background-color: blue;
+  background-color: orange;
   color: white;
   text-align: center;
   padding: 5px 8px;
@@ -65,12 +65,12 @@ body {
   outline: none;
 }
 .init-button:hover {
-  box-shadow: 0px 0px 0px lightblue;
-  color: orange;
+  box-shadow: 0px 0px 0px red;
+  color: white;
 }
 .init-button:active {
-  box-shadow: 0px 0px 0px navyblue;
-  color: black;
+  box-shadow: 0px 0px 0px purple;
+  color: white;
 }
 
 .scroll-down {
