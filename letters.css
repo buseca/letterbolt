@@ -104,12 +104,16 @@ body {
   color: black;
 }
 
-
+#counter .letterbolt {
+  opacity: 0.85;
+}
 #counter {
   background: url('demo/pattern.png');
   background-size: 100px;
   margin-top: 0;
   padding-bottom: 40px;
+  box-shadow: inset 0 0 60px #000;
+  -moz-box-shadow: inset 0 0 40px #333;
 }
 /*#counter:after {
   content:;
