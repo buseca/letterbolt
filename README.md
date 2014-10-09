@@ -1,7 +1,7 @@
 letterbolt
 ==========
 
-Letterbolt is a single JS file (letters.js) which add an animated font to your webpage.
+Letterbolt is a single JS file (letters.js) which adds an animated font to your webpage.
 Just add the 'lb' class to your html tag and the font will be implemented on the writing.
 
 	<h2 class='lb giant scrolled'> some writing </h2>
