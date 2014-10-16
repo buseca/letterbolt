@@ -295,7 +295,7 @@ $(document).ready(function(){
 
 	setInterval(function() {
 		looped();
-	}, 10000);
+	}, 6000);
 
 
 

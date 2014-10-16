@@ -75,6 +75,30 @@ body {
   background-color: purple;
 }
 
+.box {
+  width: 100%;
+  margin: 20px 0;
+  background-color: white;
+  padding: 0 0 30px 0;
+}
+#type-label {
+  text-align: center;
+}
+.lb-input {
+  margin: auto;
+  text-align: center;
+  display: block;
+  height: 50px;
+  width: 300px;
+  border: 2px solid #c5427b;
+  outline: none;
+  font-size: 24px;
+}
+.lb-output {
+  text-align: center;
+}
+
+
 .scroll-down {
   padding-top: 140px;
   text-align: center;
